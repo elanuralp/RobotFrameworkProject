@@ -1,0 +1,7 @@
+datasources:9bd7390702d169c736deccf85f033b754c2b1f5e
+commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
+suitesfrom:no-suites-from-option
+file:f6230e511bc57d50a249ed9fd021f2c1e4c76a2f
+--test testDemo6.Validate UnSuccesful Login
+--test testDemo6.End to end ecommerce Product validation
+--test testDemo6.Select the Form and navigate to Child window

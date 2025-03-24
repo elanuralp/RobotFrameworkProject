@@ -1,0 +1,22 @@
+==============================================================================
+testDemo6 :: To validate the Login form                                       
+==============================================================================
+Select the Form and navigate to Child window                            
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/elanuralp/PycharmProjects/RobotFramework/tests/testDemo6.robot:41
+    T:  Select the Form and navigate to Child window    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/elanuralp/PycharmProjects/RobotFramework/tests/testDemo6.robot:42
+      Fill the Login Details and Login Form    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/elanuralp/PycharmProjects/RobotFramework/PO/LandingPage.robot:38
+      Wait Until Element Is Not Visible    css:.modal-body    15s
+______________________________________________________________________________
+| FAIL |
+Element 'css:.modal-body' still visible after 15 seconds.
+------------------------------------------------------------------------------
+testDemo6 :: To validate the Login form                               | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  /Users/elanuralp/PycharmProjects/RobotFramework/tests/pabot_results/2/output.xml
