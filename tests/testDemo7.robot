@@ -9,6 +9,7 @@ ${book_name}    RobotFramework
 
 *** Test Cases ***
 Play around with Dictionary
+    [Tags]    API
 
     &{data}=    Create Dictionary    name=rahulshetty    course=robot    website=rahulshettyacademy.com
     log    ${data}
@@ -18,6 +19,7 @@ Play around with Dictionary
     Log    ${url}
 
 Add Book into Library DataBase
+    [Tags]    API
     &{req_body}=    Create Dictionary    name=${book_name}    isbn=rf129     aisle=123432   author=rahulshetty
     ${response}=    POST        ${base_url}/Library/Addbook.php    json=${req_body}    expected_status=200
     log    ${response.json()}
@@ -29,12 +31,14 @@ Add Book into Library DataBase
     Set Global Variable    ${book_id}
 
 Get the Book Details which got added
+    [Tags]    API
     ${get_response}=    GET    ${base_url}/Library/GetBook.php    params=ID=${book_id}    expected_status=200
     log    ${get_response.json()}
     Should Be Equal As Strings    ${book_name}    ${get_response.json()}[0][book_name]
 
 
 Delete the Book from database
+    [Tags]    API
     &{delete_req}=    Create Dictionary    ID=${book_id}
     ${delete_resp}=    POST     ${base_url}/Library/DeleteBook.php    json=${delete_req}    expected_status=200
     log    ${delete_resp.json()}
